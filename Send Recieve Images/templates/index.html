@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+<h1 style="text-align:center;">Detectron2 Web App</h1>
+<br>
+<h2>Detectron2 Instance Segmentation</h2>
+
+<form action = "/detect" method = "POST" enctype = "multipart/form-data">
+	<input type = "file" name = "file" />
+	<input name = "submit" type = "submit"/>
+</form>
+<br>
+For URL 
+<form action = "/detect" method = "GET" enctype = "multipart/form-data">
+	<input type="text" name="url">
+	<input type = "submit"/>
+</form>
