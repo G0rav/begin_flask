@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+	<h1 style="text-align:center;">Perfect Potrait Mode</h1>
+	<br>
+	<h2>Instance Segmentation Demo</h2>
+
+	<form action = "/" method = "POST" enctype = "multipart/form-data">
+		<label for="file-upload">Upload Image:</label>
+		<input type = "file" name = "image" id = "file-upload">
+		<input type = "submit" value = "submit" >
+	</form>
+
+	</br>
+
+	<h2> Test: {{test}}</h2>
+	{% if image_name%}
+	<div>
+		Blah Blah
+		<img src="static/{{image_name}}" >
+		
+		<img src="static/{{pred_image_name}}" >
+	</div>
+	
+	{%endif%}
+
+</body>
